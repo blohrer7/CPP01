@@ -6,7 +6,7 @@
 #    By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/20 08:55:58 by blohrer           #+#    #+#              #
-#    Updated: 2025/11/20 09:29:13 by blohrer          ###   ########.fr        #
+#    Updated: 2025/11/20 10:34:14 by blohrer          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,8 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++17
 
 NAME = zombieHorde
 
-SRC =	Zombie.cpp
+SRC =	Zombie.cpp \
+		main.cpp
 OBJ = $(SRC:.cpp=.o)
 
 $(NAME): $(OBJ)
