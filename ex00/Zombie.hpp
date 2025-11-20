@@ -6,12 +6,12 @@
 /*   By: blohrer <blohrer@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 14:29:43 by blohrer           #+#    #+#             */
-/*   Updated: 2025/11/19 17:09:42 by blohrer          ###   ########.fr       */
+/*   Updated: 2025/11/20 08:50:53 by blohrer          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_H
-#define ZOMBIE_H
+#ifndef ZOMBIE_HPP
+#define ZOMBIE_HPP
 
 #include <iostream>
 #include <cctype>
@@ -24,7 +24,7 @@ class Zombie{
 	public:
 		Zombie(std::string name);
 		~Zombie();
-		
+
 		void announce(void);
 };
 
