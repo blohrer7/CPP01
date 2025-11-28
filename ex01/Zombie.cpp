@@ -12,24 +12,19 @@
 
 #include "Zombie.hpp"
 
-// Constructor that creates a Zombie with an initial name.
 Zombie::Zombie(std::string name)
 {
 	this->name = name;
 }
 
-// Setter used to change a Zombie's name.
 void Zombie::setName(std::string name)
 {
 	this->name = name;
 }
 
-// Default constructor.
 Zombie::Zombie(){}
 
-// Destructor.
-// when we delete it (heap or horde).
-// Used here to show which Zombie is destroyed.
+
 Zombie::~Zombie()
 {
 	std::cout << this->name <<" is destroyed" << std::endl;
@@ -40,11 +35,7 @@ void Zombie::announce(void)
 	std::cout << name << ": BraiiiiiiinnnzzzZ...\n";
 }
 
-// Creates a horde (array) of N Zombies on the heap.
-// Each Zombie is first created using the default constructor,
-// then given a unique name using setName.
-// The function returns a pointer to the FIRST Zombie in the array.
-// Caller must delete the horde using: delete[] horde;
+
 Zombie* zombieHorde(int N, std::string name)
 {
 	int i = 0;
